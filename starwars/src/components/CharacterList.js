@@ -19,7 +19,8 @@ function CharacterList() {
             })
     }, []);
     return (
-        <div className='character'>
+        <div className='container'>
+            <div className='entry'>
             {character.map((item, index) => {
                 return (
                     
@@ -34,6 +35,7 @@ function CharacterList() {
                     />
                 );
             })}
+            </div>
         </div>
     )
 
