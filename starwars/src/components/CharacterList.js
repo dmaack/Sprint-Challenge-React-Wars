@@ -20,14 +20,17 @@ function CharacterList() {
     }, []);
     return (
         <div className='character'>
-            {character.map(item => {
+            {character.map((item, index) => {
                 return (
                     
                     <CharacterCard 
-                        key={item.id}
+                        key={index}
                         name={item.name}
                         birthyear={item.birth_year}
-                        homeworld={item.homeworld}
+                        gender={item.gender}
+                        height={item.height}
+                        eyecolor={item.eye_color}
+                        created={item.created}
                     />
                 );
             })}
